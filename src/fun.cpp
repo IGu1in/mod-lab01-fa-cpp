@@ -17,7 +17,7 @@ unsigned int faStr1(const char *str) {
             isCorrect = false;
         }
         if (i == strlen(str) - 1 && str[i] != ' ') {
-            if(isCorrect) {
+            if (isCorrect) {
                 count++;
             }
         }
@@ -90,7 +90,7 @@ unsigned int faStr3(const char *str) {
             countChar++;
         }
         if (i == strlen(str) - 1 && str[i] != ' ') {
-            countWord++;            
+            countWord++;
         }
         if (isSpace == true) {
             if (i != 0) {
