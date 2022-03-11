@@ -1,6 +1,7 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
 #include <ctype.h>
+#include <cstring>
 #include <stdio.h>
 #include <cmath>
 
