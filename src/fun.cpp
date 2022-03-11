@@ -10,16 +10,21 @@ unsigned int faStr1(const char *str) {
     bool isSpace = false;
     bool isCorrect = true;
     for (int i = 0; i < strlen(str); i++) {
-        if (str[i] == ' ') {
+        if (str[i] == ' '){
             isSpace = true;
         }
         if (isdigit(str[i])) {
             isCorrect = false;
         }
+        if (i == strlen(str) - 1 && str[i] != ' ') {
+            if(isCorrect) {
+                count++;
+            }
+        }
         if (isSpace == true) {
-            if (i != 0) {
+            if (i != 0){
                 if (str[i - 1] != ' ') {
-                    if (isCorrect) {
+                    if (isCorrect){
                         count++;
                     }
                 }
@@ -52,10 +57,16 @@ unsigned int faStr2(const char *str) {
                 }
             }
         }
+        if (i == strlen(str) - 1 && str[i] != ' ') {
+            if (isCorrect) {
+                count++;
+            }
+        }
         if (isSpace == true) {
             if (i != 0) {
                 if (str[i - 1] != ' ') {
-                    if (isCorrect) {
+                    if (isCorrect)
+                    {
                         count++;
                     }
                 }
@@ -78,6 +89,9 @@ unsigned int faStr3(const char *str) {
             isSpace = true;
         } else {
             countChar++;
+        }
+        if (i == strlen(str) - 1 && str[i] != ' ') {
+            countWord++;            
         }
         if (isSpace == true) {
             if (i != 0) {
