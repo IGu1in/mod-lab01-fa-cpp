@@ -10,7 +10,7 @@ unsigned int faStr1(const char *str) {
     bool isSpace = false;
     bool isCorrect = true;
     for (int i = 0; i < strlen(str); i++) {
-        if (str[i] == ' '){
+        if (str[i] == ' ') {
             isSpace = true;
         }
         if (isdigit(str[i])) {
@@ -22,9 +22,9 @@ unsigned int faStr1(const char *str) {
             }
         }
         if (isSpace == true) {
-            if (i != 0){
+            if (i != 0) {
                 if (str[i - 1] != ' ') {
-                    if (isCorrect){
+                    if (isCorrect) {
                         count++;
                     }
                 }
@@ -65,8 +65,7 @@ unsigned int faStr2(const char *str) {
         if (isSpace == true) {
             if (i != 0) {
                 if (str[i - 1] != ' ') {
-                    if (isCorrect)
-                    {
+                    if (isCorrect) {
                         count++;
                     }
                 }
